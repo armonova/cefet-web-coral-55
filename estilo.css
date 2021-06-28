@@ -30,6 +30,8 @@ strong {
   border-top: 1px solid #aac0ae;
   border-bottom: 1px solid #aac0ae;
   border-left: 1px solid #aac0ae;
+
+  padding: 20px;
 }
 
 #cardapio h3 {
@@ -107,6 +109,9 @@ html, body, #recipiente {
 
 /* EXERCÍCIO 4: cada item do menu */
 article {
+  line-height: 40px;
+  justify-content: space-between;
+  display: flex;
 }
 
 
