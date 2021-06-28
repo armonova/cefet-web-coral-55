@@ -61,7 +61,6 @@ html, body, #recipiente {
 
 #cabecalho-pagina {
   grid-column: 2/2;
-  grid-row: 1/3;
 }
 
 #lateral {
@@ -79,11 +78,17 @@ html, body, #recipiente {
   grid-row: 3/3;
 }
 
-
-
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+#cabecalho-pagina h1 {
+  text-align: left;
+}
+#cabecalho-pagina h2 {
+  text-align: right;
 }
 
 #cabecalho-pagina h1 {
