@@ -67,7 +67,7 @@ html, body, #recipiente {
 
 #lateral {
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 2/4;
 }
 
 #cardapio {
@@ -126,6 +126,9 @@ article {
 
 /* EXERCÍCIO 6: lateral */
 #lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
