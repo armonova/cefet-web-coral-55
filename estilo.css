@@ -67,7 +67,7 @@ html, body, #recipiente {
 
 #lateral {
   grid-column: 1/2;
-  grid-row: 2/4;
+  grid-row: 1/4;
 }
 
 #cardapio {
@@ -147,9 +147,14 @@ article {
 
 /* EXERCÍCIO 8: deslocamento no siri e peixe */
 #siri {
+  position: relative;
+  top: 17px;
+  left: -10px;
 }
 
 #peixe {
+  position: relative;
+  left: -44px;
 }
 
 /* EXERCÍCIO 9: bolhas - no HTML e no JS */
