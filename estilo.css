@@ -4,12 +4,46 @@
 @import "./fonts/ravie.css";
 @import "./fonts/verdana.css";
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-do-texto: #eee;
+  }
+  body {
+    background-color: black;
+  }
+  #cardapio {
+    background-color: rgba(223, 11, 11, 0.137);
+    border-top: 1px solid #1212ec7e;
+    border-bottom: 1px solid #0fbe2f7e;
+    border-left: 1px solid #0ea0277e;
+  }
+  #recipiente {
+    background-image: linear-gradient(to bottom, #4b4826, #183f4b 80%);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --cor-do-texto: #333;
+  }
+  body {
+    background-color: #fff;
+  }
+  #cardapio {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #aac0ae;
+    border-bottom: 1px solid #aac0ae;
+    border-left: 1px solid #aac0ae;
+  }
+  #recipiente {
+    background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
+  }
+}
+
 h1 {
   font-family: 'Ravie', sans-serif;
 }
 
 body {
-  background-color: #fff;
   font-family: 'Verdana', sans-serif;
   margin-top: 0;
   margin-bottom: 0;
@@ -20,29 +54,23 @@ strong {
 }
 
 #recipiente {
-  background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
   border-left: 1px solid #d3d3d3;
   border-right: 1px solid #d3d3d3;
 }
 
 #cardapio {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-top: 1px solid #aac0ae;
-  border-bottom: 1px solid #aac0ae;
-  border-left: 1px solid #aac0ae;
-
   padding: 20px;
 }
 
 #cardapio h3 {
   font-size: 18px;
-  color: #333;
+  color: var(--cor-do-texto);
   margin-top: 30px;
 }
 
 #cardapio article {
   font-size: 14px;
-  color: #333;
+  color: var(--cor-do-texto);
 }
 
 
@@ -103,7 +131,7 @@ html, body, #recipiente {
 #cabecalho-pagina h2 {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: var(--cor-do-texto);
   font-weight: normal;
 }
 
